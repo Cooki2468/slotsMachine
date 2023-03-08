@@ -20,46 +20,48 @@ header{
     padding: 10px;
     border-radius: 25px;
     text-align: center;
-    width: 50%;
+    width: 25%;
     margin: auto;
 }
 
-#money{
+#menu{
     display: flex;
-    margin: auto;
-    width: 50%;
     justify-content: space-between;
+    width: 25%;
+    margin: auto;
+    padding: 10px;
+    background-color: var(--box-background-dark);
+    border-radius: 25px;
     margin-top: 20px;
 }
 
 #balance, #bet{
-    background-color: var(--box-background-dark);
+    color: var(--box-background-light);
+    background-color: var(--text-color);
     border-radius: 25px;
     padding: 10px;
-    width: 45%;
     font-size: larger;
     text-align: center;
+    width: 100%;
+    margin: 5px;
 }
 
 #spin-button{
-    width: 50%;
     margin: auto;
-    margin-top: 20px;
+    border-radius: 25px;
     display: flex;
     justify-content: center;
-    background-color: var(--box-background-dark);
-    border-radius: 25px;
+    margin-top: 20px;
 }
 
 #spin-button button{
-    background-color: var(--box-background-light);
-    color: var(--text-color);
+    background-color: var(--text-color);
+    color: var(--box-background-light);
     border-radius: 25px;
     padding: 10px;
-    border: none;
+    border: 2px solid var(--box-background-dark);
     font-size: larger;
     width: 25%;
-    margin: 5px;
 }
 
 #spin-button button:hover{
@@ -69,14 +71,14 @@ header{
 
 .bet-button{
     border-radius: 10px;
-    background-color: var(--box-background-light);
+    background-color: var(--box-background-black);
     padding: 10px;
     border: none;
-    color: var(--text-color);
+    color: var(--box-background-light);
 }
 
 .bet-button:hover{
-    outline: 2px solid var(--text-color);
+    outline: 2px solid var(--box-background-light);
     cursor: pointer;
 }
 
