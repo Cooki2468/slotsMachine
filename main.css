@@ -8,11 +8,22 @@
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: var(--background-back);
-    opacity: 1;
-    background: radial-gradient(circle, transparent 20%, var(--background-back) 20%, var(--background-back) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, var(--background-back) 20%, var(--background-back) 80%, transparent 80%, transparent) 100px 100px, linear-gradient(var(--background-front) 8px, transparent 8px) 0 -4px, linear-gradient(90deg, var(--background-front) 8px, var(--background-back) 8px) -4px 0;
-    background-size: 200px 200px, 200px 200px, 100px 100px, 100px 100px;
-    color: var(--text-color);
+    background: linear-gradient(90deg, #00c2c2, #00465e, #00d483);
+    background-size: 400% 400%;
+    height: 100vh;
+    animation: animatedBackground 15s ease infinite;
+}
+
+@keyframes animatedBackground {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 header{
@@ -22,6 +33,8 @@ header{
     text-align: center;
     width: 25%;
     margin: auto;
+    animation-name: example;
+    animation-duration: 10s;
 }
 
 #menu{

@@ -1,2 +1,2 @@
-let balance = 0;
-document.getElementById("balance").innerHTML = balance;
+let balance = 5;
+document.getElementById("balance-label").innerHTML = `${balance}`;
