@@ -6,7 +6,6 @@
     <title>Slot machine</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
 </head>
 <body>
     <header>
@@ -19,24 +18,24 @@
 
         <section id="bet">
             <label>bet: </label>
-            <button class="bet-button">5</button>
-            <button class="bet-button">10</button>
-            <button class="bet-button">15</button>
+            <button class="bet-button" id="bet-1">5</button>
+            <button class="bet-button" id="bet-2">10</button>
+            <button class="bet-button" id="bet-3">15</button>
         </section>
     </section>
 
     <section id="spin-button">
-        <button>Spin</button>
+        <button id="spin">Spin</button>
     </section>
     
     <section id="slots">
-        <div class="slot">
+        <div class="slot" id="slot-1">
 
         </div>
-        <div class="slot">
+        <div class="slot" id="slot-2">
 
         </div>
-        <div class="slot">
+        <div class="slot" id="slot-3">
 
         </div>
     </section>
@@ -44,5 +43,6 @@
     <section id="win">
 
     </section>
+    <script src='main.js'></script>
 </body>
 </html>
